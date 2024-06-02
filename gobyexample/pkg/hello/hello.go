@@ -1,5 +1,5 @@
 package hello
 
-func Hello_world_method() string {
+func Hello_method() string {
 	return "hello"
 }

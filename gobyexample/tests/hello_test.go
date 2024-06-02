@@ -1,4 +1,4 @@
-package hello_testing
+package test
 
 import (
 	"errors"
@@ -8,25 +8,25 @@ import (
 
 // string comparison implementation
 func strcmp(a, b string) error {
-	for i, _ := range a {
-		if a[i] != b[i] {
-			return errors.New("to break the scope")
-		}
+
+	if len(a) != len(b) {
+		return errors.New("Different length strings")
 	}
 
-	for i, _ := range b {
+	for i := range a {
 		if a[i] != b[i] {
-			return errors.New("to break the scope")
+			return errors.New("Mismatching strings")
 		}
 	}
 
 	return nil
 }
 
-func TestHelloWorld(t *testing.T) {
-	got := hello.Hello_world_method()
-	want := "hellco"
-	err := strcmp(got, want)
+func TestHello(t *testing.T) {
+	have := hello.Hello_method()
+	want := "hello"
+
+	err := strcmp(have, want)
 	if err != nil {
 		t.Fatalf("Strings do not match")
 	}

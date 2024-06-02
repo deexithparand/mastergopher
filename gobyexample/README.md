@@ -1,8 +1,17 @@
 # Go Language Learning ToDo List
 
+Additional Mastery
+- [ ] strings
+- [ ] bufio
+- [ ] Arrays, slices (and strings): The mechanics of 'append'
+- [ ] Strings, bytes, runes and characters in Go
+- [ ] Exploring Input/Output, strconv, strings, and bufio in Go (Golang)
+- [ ] In-depth introduction to bufio.Scanner in Golang
+- [ ] Mastering Strings in Golang: Manipulation, Formatting, and More
+
 A comprehensive list of Go language topics to learn. Check off each item as you master it!
 
-- [ ] Hello World
+- [x] Hello World
 - [ ] Values
 - [ ] Variables
 - [ ] Constants
