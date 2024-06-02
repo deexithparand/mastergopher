@@ -7,12 +7,12 @@ This 3-day plan is designed to help you master essential Golang concepts through
 ### Day 1: Core Language and Data Structures
 
 #### Morning (3 hours)
-- [ ] **Values, Variables, Constants, For, If/Else, Switch**
-  - [ ] Review basic syntax and control flow.
-  - [ ] Practice examples and exercises.
-- [ ] **Functions, Multiple Return Values, Variadic Functions**
-  - [ ] Study function definitions and multiple return values.
-  - [ ] Implement simple and variadic functions.
+- [x] **Values, Variables, Constants, For, If/Else, Switch**
+  - [x] Review basic syntax and control flow.
+  - [x] Practice examples and exercises.
+- [x] **Functions, Multiple Return Values, Variadic Functions**
+  - [x] Study function definitions and multiple return values.
+  - [x] Implement simple and variadic functions.
 
 #### Afternoon (3 hours)
 - [ ] **Arrays, Slices, Maps**

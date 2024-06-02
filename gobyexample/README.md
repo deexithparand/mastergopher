@@ -12,9 +12,9 @@ Additional Mastery
 A comprehensive list of Go language topics to learn. Check off each item as you master it!
 
 - [x] Hello World
-- [ ] Values
-- [ ] Variables
-- [ ] Constants
+- [x] Values
+- [x] Variables
+- [x] Constants
 - [ ] For
 - [ ] If/Else
 - [ ] Switch
