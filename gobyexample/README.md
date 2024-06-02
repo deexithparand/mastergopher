@@ -15,9 +15,9 @@ A comprehensive list of Go language topics to learn. Check off each item as you 
 - [x] Values
 - [x] Variables
 - [x] Constants
-- [ ] For
-- [ ] If/Else
-- [ ] Switch
+- [x] For
+- [x] If/Else
+- [x] Switch
 - [ ] Arrays
 - [ ] Slices
 - [ ] Maps
