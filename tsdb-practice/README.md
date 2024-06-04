@@ -15,12 +15,13 @@ This 3-day plan is designed to help you master essential Golang concepts through
   - [x] Implement simple and variadic functions.
 
 #### Afternoon (3 hours)
-- [ ] **Arrays, Slices, Maps**
-  - [ ] Learn about array and slice operations.
-  - [ ] Understand map creation, insertion, and retrieval.
+- [x] **Arrays, Slices, Maps**
+  - [x] Learn about array and slice operations.
+  - [x] Understand map creation, insertion, and retrieval.
 - [ ] **Pointers, Structs, Methods, Struct Embedding**
   - [ ] Review how to use pointers.
   - [ ] Practice defining and using structs, methods, and struct embedding.
+
 
 #### Evening (2 hours)
 - [ ] **Interfaces, Generics**

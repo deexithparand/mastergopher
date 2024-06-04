@@ -20,16 +20,16 @@ A comprehensive list of Go language topics to learn. Check off each item as you 
 - [x] Switch
 - [x] Arrays
 - [x] Slices
-- [ ] Maps
-- [ ] Range
-- [ ] Functions
-- [ ] Multiple Return Values
+- [x] Maps
+- [x] Range
+- [x] Functions
+- [x] Multiple Return Values
 - [ ] Variadic Functions
 - [ ] Closures
 - [ ] Recursion
 - [ ] Pointers
 - [ ] Strings and Runes
-- [ ] Structs
+- [x] Structs
 - [ ] Methods
 - [ ] Interfaces
 - [ ] Enums
@@ -58,7 +58,7 @@ A comprehensive list of Go language topics to learn. Check off each item as you 
 - [ ] Sorting
 - [ ] Sorting by Functions
 - [ ] Panic
-- [ ] Defer
+- [x] Defer
 - [ ] Recover
 - [ ] String Functions
 - [ ] String Formatting
@@ -74,19 +74,19 @@ A comprehensive list of Go language topics to learn. Check off each item as you 
 - [ ] URL Parsing
 - [ ] SHA256 Hashes
 - [ ] Base64 Encoding
-- [ ] Reading Files
-- [ ] Writing Files
+- [x] Reading Files
+- [x] Writing Files
 - [ ] Line Filters
-- [ ] File Paths
+- [x] File Paths
 - [ ] Directories
 - [ ] Temporary Files and Directories
 - [ ] Embed Directive
-- [ ] Testing and Benchmarking
+- [x] Testing and Benchmarking
 - [ ] Command-Line Arguments
 - [ ] Command-Line Flags
 - [ ] Command-Line Subcommands
 - [ ] Environment Variables
-- [ ] Logging
+- [x] Logging
 - [ ] HTTP Client
 - [ ] HTTP Server
 - [ ] Context
