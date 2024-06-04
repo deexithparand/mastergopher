@@ -1,7 +1,5 @@
 package anonymous
 
-import "fmt"
-
 type GrpDatatype struct {
 	s string
 	i int32
@@ -22,8 +20,6 @@ func StringModifiability() (bool, error) {
 		stringbytes := []byte(obj.s)
 		stringbytes[0] = addon
 		outstring := string(stringbytes)
-
-		fmt.Println("Check similarity : ", outstring, " & ", obj.s)
 
 		// returns true if mutable
 		return outstring == obj.s

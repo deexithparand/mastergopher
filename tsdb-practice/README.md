@@ -31,7 +31,41 @@ This 3-day plan is designed to help you master essential Golang concepts through
   - [ ] Write small programs that integrate multiple concepts.
 
 ---
+### QUESTIONS :
 
+### Arrays, Slices, Maps
+
+#### Array and Slice Operations
+Write a function that takes an array of integers and returns a new slice containing only the even numbers from the array. Then, write another function that appends a given integer to this slice.
+
+#### Map Creation, Insertion, and Retrieval
+Create a map to store the names and ages of several people. Write a function to add a new person to the map and another function to retrieve a person's age by their name.
+
+### Pointers, Structs, Methods, Struct Embedding
+
+#### Using Pointers
+Write a function that takes a pointer to an integer and doubles its value.
+
+#### Structs, Methods, and Struct Embedding
+Define a `Person` struct with fields for name and age. Embed this struct in an `Employee` struct that also has a field for the employee's position. Write a method for the `Employee` struct that prints a greeting message.
+
+## Evening (2 hours)
+
+### Interfaces, Generics
+
+#### Interfaces
+Define an interface `Shape` with a method `Area`. Create two structs, `Circle` and `Rectangle`, that implement this interface. Write a function that takes a `Shape` and prints its area.
+
+#### Generics
+Write a generic function that finds the maximum value in a slice of any ordered type (integers, floats, etc.).
+
+### Review and Practice
+
+#### Practice Problem
+Combine the above concepts to write a small program where you define a `Student` struct with fields for name and grades (a slice of integers). Implement a method to calculate the average grade, and use an interface to define behavior for different types of students (e.g., `RegularStudent` and `HonorStudent`).
+```
+
+---
 ### Day 2: Concurrency and Advanced Data Handling
 
 #### Morning (3 hours)
