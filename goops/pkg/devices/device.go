@@ -22,10 +22,11 @@ type SmartDevices struct {
 	NIC string
 }
 
+// setter
 func (s *SmartDevices) CreateNic(brand string) error {
 
 	if brand == "" {
-		return errors.New("Invalid Brand name")
+		return errors.New("Invalid Brand name, its empty")
 	}
 
 	s.NIC = brand

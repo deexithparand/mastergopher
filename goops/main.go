@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"goops/pkg/devices"
 	"goops/pkg/utils"
 )
 
@@ -22,4 +24,15 @@ func main() {
 	// 2. composition
 	// ... implemented using camera.go
 	// var camera devices.
+	var cam devices.Camera
+	err := cam.Setter("Canon", false, 0, 50, "Cisco")
+	if err != nil {
+		utils.Writer(err)
+	} else {
+		fmt.Println("Camera values set successfully!")
+	}
+
+	utils.Writer(cam.ConnectNic())
+	utils.Writer(cam)
+
 }
