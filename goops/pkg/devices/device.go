@@ -14,6 +14,11 @@ type DeviceActions interface {
 	TurnOn()
 }
 
+// interface to connect to any network device
+type DeviceConfig interface {
+	ConnectDevice()
+}
+
 // now implement these features in different smart devices in different modules
 
 // To display struct composition

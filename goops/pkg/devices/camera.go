@@ -1,6 +1,7 @@
 package devices
 
 import (
+	"fmt"
 	"goops/pkg/utils"
 )
 
@@ -15,6 +16,11 @@ type Camera struct {
 	isOn      bool   // status whether on or off
 	usageTime int32  // usage time in hours
 	lensSize  int32  // in mm
+}
+
+// implementing an interface to promote polymorphism
+func (c *Camera) ConnectDevice() {
+	utils.Writer(fmt.Sprintf("Camera logs : connected to %s device via nic of brand %s", c.brand, c.NIC))
 }
 
 // setter to follow encapsulation oops
