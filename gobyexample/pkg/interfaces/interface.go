@@ -1,4 +1,4 @@
-package interface_test
+package interfaces
 
 import "reflect"
 
@@ -14,21 +14,21 @@ type ServerGateway interface {
 
 // let us say there are two kinds of server which takes the password
 type IntegerServer struct {
-	username string
-	password int
+	Username string
+	Password int
 }
 
 // method signature for integer server
 func (s *IntegerServer) Authenticate() bool {
-	return reflect.TypeOf(s.password).Kind() == reflect.Int
+	return reflect.TypeOf(s.Password).Kind() == reflect.Int
 }
 
 type StringServer struct {
-	username string
-	password string
+	Username string
+	Password string
 }
 
 // method signature for integer server
 func (s *StringServer) Authenticate() bool {
-	return reflect.TypeOf(s.password).Kind() == reflect.String
+	return reflect.TypeOf(s.Password).Kind() == reflect.String
 }
