@@ -32,7 +32,7 @@ func TestJsonify(t *testing.T) {
 		// },
 	}
 
-	expected, err := jsonify.MyUnmarshall(JsonString)
+	expected, err := jsonify.MyUnmarshallMap(JsonString)
 	if err != nil {
 		t.Fatalf("error while my unmarshall %s", err)
 	}

@@ -11,7 +11,7 @@ import (
 type JsonOut map[string]interface{}
 
 // unmarshall this json string
-func MyUnmarshall(jsonstring string) (JsonOut, error) {
+func MyUnmarshallMap(jsonstring string) (JsonOut, error) {
 
 	inputByteArray := []byte(jsonstring)
 
