@@ -29,7 +29,7 @@ func (i *Intstore) Append(v any) error {
 	if v, ok := v.(int); ok {
 		i.Intarr = append(i.Intarr, v)
 	} else {
-		return errors.New("Invalid Type of input to be appended")
+		return errors.New("invalid Type of input to be appended")
 	}
 	return nil
 }
@@ -44,7 +44,7 @@ func (s *Stringstore) Append(v any) error {
 	if v, ok := v.(string); ok {
 		s.Stringarr = append(s.Stringarr, v)
 	} else {
-		return errors.New("Invalid input type to be appended")
+		return errors.New("invalid input type to be appended")
 	}
 	return nil
 }
