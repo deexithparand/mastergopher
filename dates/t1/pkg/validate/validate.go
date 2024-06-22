@@ -1,1 +1,20 @@
 package validate
+
+// validate must be an interface because it must validate the sender and the payment
+
+// GENERAL VALIDATION JSON
+// ... currency must not be below 0
+
+// BASED ON OUR CUSTOM VALIDATION
+
+// ... First level : allowed only to send mony in allowed currencies
+// ... optional Second Level : allowed to send money only less than balance amount
+type Validator interface {
+	Validate() bool
+}
+
+func ValidatePayment(v Validator) bool {
+	return v.Validate()
+}
+
+// custom validations based on the sender will be implemented in the struct level of the sender
