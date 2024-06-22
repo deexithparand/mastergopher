@@ -1,8 +1,8 @@
 {
-    "payments": [
+    "transactions": [
         {
             "amount": 8000,
-            "currency": "inr",
+            "currency": "ieu",
             "payment_mode": "upi",
             "payment_detail": {
                 "upi_id": "someone@some_bank"
@@ -10,7 +10,7 @@
         },
         {
             "amount": -1,
-            "currency": "usd",
+            "currency": "usds",
             "payment_mode": "upi",
             "payment_detail": {
                 "upi_id": "someone@some_bank"

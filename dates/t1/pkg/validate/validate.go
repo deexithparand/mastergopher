@@ -10,10 +10,10 @@ package validate
 // ... First level : allowed only to send mony in allowed currencies
 // ... optional Second Level : allowed to send money only less than balance amount
 type Validator interface {
-	Validate() bool
+	Validate() ([]int, []string, error) // returns (valid transaction indices, alert strings for invalidity)
 }
 
-func ValidatePayment(v Validator) bool {
+func ValidatePayment(v Validator) ([]int, []string, error) {
 	return v.Validate()
 }
 

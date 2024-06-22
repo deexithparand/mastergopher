@@ -7,16 +7,11 @@ import (
 )
 
 func main() {
-	// to bring back the usage of type assertion and interface usage also jsonseal package demo too
-	// .. I can define a transaction method
-	// .. using type assertion I can find the endpoint from where I get the payment
-	// .. -> pay from source 1 and source 2 are of different types -> validated with jsonseal -> source found and printed
-	// validate - jsonseal, transaction will choose the source from the two, assertion will validate the source too
 
 	// create two senders
 	s1 := sender.Salaried{
 		Name:    "gopi",
-		Balance: 100,
+		Balance: 10000,
 		AllowedCurrencies: []string{
 			"inr", "yen",
 		},
@@ -32,8 +27,17 @@ func main() {
 	// 	BusinessId: "JMD001",
 	// }
 
-	var payment1 validate.Validator = &s1
-	fmt.Println(validate.ValidatePayment(payment1))
+	// employee transactions
+	var empPayment validate.Validator = &s1
+	// var entrePayment validate.Validator = &s2
+
+	validArr, invalidArr, validateErr := validate.ValidatePayment(empPayment)
+	if validateErr != nil {
+		fmt.Println("Error : ", validateErr.Error())
+	} else {
+		fmt.Println("Valid Payments List : ", validArr)
+		fmt.Println("InValid Payments List : ", invalidArr)
+	}
 
 	// jsoninbuilt package tryout
 	// jsonstring, err := os.ReadFile("./data/validpay.json")

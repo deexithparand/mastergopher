@@ -20,5 +20,4 @@ func TestTypeAssert(t *testing.T) {
 	} else {
 		t.Fatalf("pochu")
 	}
-
 }
